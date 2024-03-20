@@ -36,7 +36,7 @@ const StyledTitle = styled.h1`
   /* color: #222; */
 `;
 
-const MendoRave = styled.h4`
+const BeatTicket = styled.h4`
   /* color: #222; */
 `;
 
@@ -47,14 +47,14 @@ function Header({filterText, onFilterTextChange}) {
     dots: true,
     infinite: true,
     speed: 400,
-    slidesToShow: 1,
+    slidesToShow: 1.7,
     slidesToScroll: 1
   };
 
   return (
     <>
       <ContentContainer>
-        <MendoRave>MENDORAVE</MendoRave>
+        <BeatTicket>BEATTICKET</BeatTicket>
       </ContentContainer>
       <div>
         <Slider {...settings}>

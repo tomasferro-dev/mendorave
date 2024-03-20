@@ -15,7 +15,8 @@ export const events = [
         link: 'https://www.passline.com/eventos/mahmut-orhan-koi-club-x-jagger-sunset-tierras-altas/tomas-ferro-277916',
         lineUp: ['Mahmut Orhan', 'Twenty Six'],
         squareImage: mahmut,
-        images: []
+        images: [],
+        finished: false,
     },
     {
         id: 2,
@@ -29,7 +30,8 @@ export const events = [
         link: null,
         lineUp: ['Milena Adamis', 'Ludmila Di Pasquale', 'IGCIØ', 'Baker', 'Igna Farrés', 'Proler'],
         squareImage: milena,
-        images: []
+        images: [],
+        finished: true,
         
     },
     {
@@ -44,6 +46,8 @@ export const events = [
         link: 'https://www.entradaweb.com.ar/evento/77f6ef34/step/1?v=VkVORC01ZWU4NTg4OSYwJjA=',
         lineUp: ['Yahir Abrahan', 'Blex'],
         squareImage: thedrop,
-        images: []
+        images: [],
+        finished: true,
+
     },
 ]

@@ -98,6 +98,16 @@ const BuyButtonWrapper = styled.div`
   }
 `;
 
+const ActiveEvent = styled.p`
+  color: #72efdd;
+  margin-bottom: 20px;
+`;
+
+const FinishedEvent = styled.p`
+  color: #a4133c;
+  margin-bottom: 20px;
+`;
+
 
 // function Event({title, date, location, link, image}) {
 function Event({show}) {
@@ -113,6 +123,7 @@ function Event({show}) {
       <BuyButtonWrapper>
         <BuyButton href={show.link} target="blank"><h3>Comprar</h3></BuyButton> 
       </BuyButtonWrapper>
+      {show.finished === true ? <FinishedEvent>Evento Finalizado</FinishedEvent> : <ActiveEvent>Evento Activo</ActiveEvent> }
     </EventContainer>
   )
 }
