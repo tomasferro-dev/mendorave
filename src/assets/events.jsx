@@ -1,8 +1,60 @@
 import mahmut from './mahmut_cuadrado.jpeg'
 import milena from './milena-adamis-flyer.jpeg'
 import thedrop from './thedropflyer.jpeg'
+import aura from './aura-2104-260395-min.jpg'
+import nicomoreno from './nicomoreno.jpg'
+import pfirter from './pfirter.jpg'
 
 export const events = [
+    {
+        id: 4,
+        title: 'U S H N U',
+        day: 'Domingo',
+        date: '21/04/2024',
+        timeStart: '18:00',
+        timeFinish: '02:00',
+        producedBy: ['Aura Sunsets'],
+        producerInstagram: '',
+        location: 'Cima Bar, Chacras de Coria',
+        link: 'https://www.passline.com/eventos/aura-2104/tomas-ferro-456667',
+        lineUp: ['U S H N U', 'KOMPAKT'],
+        squareImage: aura,
+        images: [],
+        finished: false,
+
+    },
+    {
+        id: 5,
+        title: 'NICO MORENO',
+        day: 'Sábado',
+        date: '04/05/2024',
+        timeStart: '23:00',
+        timeFinish: '06:00',
+        producedBy: ['KOI'],
+        location: 'Arena Maipú Stadium',
+        link: 'https://eventos.tuentrada.com/list/partnerAdvantage?code=nmaferro',
+        lineUp: ['Nico Moreno', 'DIST', 'Rêvasser'],
+        squareImage: nicomoreno,
+        images: [],
+        finished: false,
+
+    },
+    {
+        id: 6,
+        title: 'PFIRTER',
+        day: 'Sábado',
+        date: '11/05/2024',
+        timeStart: '23:00',
+        timeFinish: '06:00',
+        producedBy: ['TEIKO WAREHOUSE'],
+        location: 'OSA CLUB',
+        link: 'https://www.passline.com/eventos/teiko-warehouse/tomas-ferro-401342',
+        lineUp: ['Pfirter', 'Gresil', 'O-YOKAI'],
+        squareImage: pfirter,
+        images: [],
+        finished: false,
+
+    },
     {
         id: 1,
         title: 'Mahmut Orhan',
@@ -16,7 +68,7 @@ export const events = [
         lineUp: ['Mahmut Orhan', 'Twenty Six'],
         squareImage: mahmut,
         images: [],
-        finished: false,
+        finished: true,
     },
     {
         id: 2,
@@ -50,4 +102,6 @@ export const events = [
         finished: true,
 
     },
+    
+    
 ]

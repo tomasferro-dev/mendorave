@@ -1,15 +1,9 @@
-// import { useEffect, useState } from 'react';
-// import mahmut from '../assets/mahmut_cuadrado.jpeg'
-// import milena from '../assets/milena-adamis-flyer.jpeg'
-// import thedrop from '../assets/thedropflyer.jpeg'
-// import styled from 'styled-components'
-// import { mainImages } from '../assets/mainImages';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import event1 from '../assets/mahmut_cuadrado.jpeg'; // Ejemplo de importación de imágenes
-import event2 from '../assets/milena-adamis-flyer.jpeg';
-import event3 from '../assets/thedropflyer.jpeg';
+import event1 from '../assets/aura-2104-260395-min-cuadrado.jpg'; // Ejemplo de importación de imágenes
+import event2 from '../assets/nicomoreno-cuadrado.jpg';
+import event3 from '../assets/pfirter-cuadrado.jpg';
 import styled from 'styled-components';
 
 const ContentContainer = styled.div`
@@ -38,6 +32,7 @@ const StyledTitle = styled.h1`
 
 const BeatTicket = styled.h4`
   /* color: #222; */
+  margin-bottom:20px;
 `;
 
 
@@ -54,7 +49,7 @@ function Header({filterText, onFilterTextChange}) {
   return (
     <>
       <ContentContainer>
-        <BeatTicket>BEATTICKET</BeatTicket>
+        <BeatTicket>BEAT TICKET</BeatTicket>
       </ContentContainer>
       <div>
         <Slider {...settings}>

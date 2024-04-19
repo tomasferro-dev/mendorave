@@ -13,16 +13,17 @@ function FilterableShowsList({shows}) {
   const [filterText, setFilterText] = useState('');
   
   return (
-    <BackGround>
-      <Header 
-        filterText={filterText}
-        onFilterTextChange={setFilterText} />
-      <Content 
-        shows={shows}
-        filterText={filterText} />
-      <Footer />
-    </BackGround>
+  <BackGround>
+    <Header 
+      filterText={filterText}
+      onFilterTextChange={setFilterText} />
+    <Content 
+      shows={shows}
+      filterText={filterText} />
+    <Footer />
+  </BackGround> 
   )
 }
+
 
 export default FilterableShowsList

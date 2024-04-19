@@ -33,11 +33,9 @@ const EventContainer = styled.div`
 const EventImage = styled.img`
   width: 250px;
   height: auto;
-  margin: 20px;
+  margin: 40px 20px 5px 20px;
   border-radius: 5px;
   box-shadow: 20px solid black;
-
-
 `;
 
 
@@ -65,13 +63,7 @@ const EventLocation = styled.p`
 `;
 
 const BuyButton = styled.a`
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
+  
   /* margin-top: 10px; */
 
   @media (max-width: 768px) {
@@ -88,13 +80,14 @@ const BuyButtonWrapper = styled.div`
   display: grid;
   align-items: center;
   /* border: 1px solid red; */
-  min-height: 150px;
+  /* min-height: 150px; */
   @media (max-width: 768px) {
     width: 100%;
     border: none;
     display: flex;
     justify-content: center;
     /* border: 1px solid red; */
+    padding: 25px 0;
   }
 `;
 
@@ -108,6 +101,27 @@ const FinishedEvent = styled.p`
   margin-bottom: 20px;
 `;
 
+const ActiveBuyButton = styled.a`
+  display: inline-block;
+  padding: 15px 60px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+    /* border: 1px solid red; */
+
+`;
+
+const InactiveBuyButton = styled.a`
+  display: inline-block;
+  padding: 15px 60px;
+  background-color: #e3d5ca;
+  color: #6c757d;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+`;
 
 // function Event({title, date, location, link, image}) {
 function Event({show}) {
@@ -120,9 +134,14 @@ function Event({show}) {
         <EventDate >{show.date}</EventDate>
         <EventLocation >{show.location}</EventLocation>
       </EventInfo>
+      {
       <BuyButtonWrapper>
-        <BuyButton href={show.link} target="blank"><h3>Comprar</h3></BuyButton> 
+        {
+          !show.finished ? <ActiveBuyButton href={show.link} target="blank"><h3>Comprar</h3></ActiveBuyButton> : <InactiveBuyButton><h3>Comprar</h3></InactiveBuyButton>
+        }
       </BuyButtonWrapper>
+      }
+      
       {show.finished === true ? <FinishedEvent>Evento Finalizado</FinishedEvent> : <ActiveEvent>Evento Activo</ActiveEvent> }
     </EventContainer>
   )
