@@ -5,6 +5,7 @@ import event1 from '../assets/aura-2104-260395-min-cuadrado.jpg'; // Ejemplo de 
 import event2 from '../assets/nicomoreno-cuadrado.jpg';
 import event3 from '../assets/pfirter-cuadrado.jpg';
 import styled from 'styled-components';
+import { slidesOnLeft } from 'react-slick/lib/utils/innerSliderUtils';
 
 const ContentContainer = styled.div`
   display: flex;
@@ -42,8 +43,20 @@ function Header({filterText, onFilterTextChange}) {
     dots: true,
     infinite: true,
     speed: 400,
-    slidesToShow: 1.7,
-    slidesToScroll: 1
+    // slidesToShow: 1.7,
+    // slidestoShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplaySpeed: 1600,
+    autoplay: true,
+    adaptiveHeight: true,
+    centerMode: true,
+    cssEase: 'ease-out',
+    // fade: true,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    rows: 1,
+
   };
 
   return (
