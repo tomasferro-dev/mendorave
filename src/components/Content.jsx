@@ -30,6 +30,7 @@ function Content({shows, filterText}) {
       }
     rows.push(
       <Event 
+        key={show.id}
         // title={show.title} 
         // link={show.link}
         // image={show.image}
@@ -44,6 +45,7 @@ function Content({shows, filterText}) {
   return(
     <ContentContainer>
       <EventWrapper>
+        <div className="elfsight-app-c18daa5e-eda1-4c95-869f-ae7c80f3238b" data-elfsight-app-lazy></div>
         {rows}
       </EventWrapper>
     </ContentContainer>

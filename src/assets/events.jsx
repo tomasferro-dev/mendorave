@@ -7,39 +7,6 @@ import pfirter from './pfirter.jpg'
 
 export const events = [
     {
-        id: 4,
-        title: 'U S H N U',
-        day: 'Domingo',
-        date: '21/04/2024',
-        timeStart: '18:00',
-        timeFinish: '02:00',
-        producedBy: ['Aura Sunsets'],
-        producerInstagram: '',
-        location: 'Cima Bar, Chacras de Coria',
-        link: 'https://www.passline.com/eventos/aura-2104/tomas-ferro-456667',
-        lineUp: ['U S H N U', 'KOMPAKT'],
-        squareImage: aura,
-        images: [],
-        finished: false,
-
-    },
-    {
-        id: 5,
-        title: 'NICO MORENO',
-        day: 'Sábado',
-        date: '04/05/2024',
-        timeStart: '23:00',
-        timeFinish: '06:00',
-        producedBy: ['KOI'],
-        location: 'Arena Maipú Stadium',
-        link: 'https://eventos.tuentrada.com/list/partnerAdvantage?code=nmaferro',
-        lineUp: ['Nico Moreno', 'DIST', 'Rêvasser'],
-        squareImage: nicomoreno,
-        images: [],
-        finished: false,
-
-    },
-    {
         id: 6,
         title: 'PFIRTER',
         day: 'Sábado',
@@ -55,6 +22,40 @@ export const events = [
         finished: false,
 
     },
+    {
+        id: 4,
+        title: 'U S H N U',
+        day: 'Domingo',
+        date: '21/04/2024',
+        timeStart: '18:00',
+        timeFinish: '02:00',
+        producedBy: ['Aura Sunsets'],
+        producerInstagram: '',
+        location: 'Cima Bar, Chacras de Coria',
+        link: 'https://www.passline.com/eventos/aura-2104/tomas-ferro-456667',
+        lineUp: ['U S H N U', 'KOMPAKT'],
+        squareImage: aura,
+        images: [],
+        finished: true,
+
+    },
+    {
+        id: 5,
+        title: 'NICO MORENO',
+        day: 'Sábado',
+        date: '04/05/2024',
+        timeStart: '23:00',
+        timeFinish: '06:00',
+        producedBy: ['KOI'],
+        location: 'Arena Maipú Stadium',
+        link: 'https://eventos.tuentrada.com/list/partnerAdvantage?code=nmaferro',
+        lineUp: ['Nico Moreno', 'DIST', 'Rêvasser'],
+        squareImage: nicomoreno,
+        images: [],
+        finished: true,
+
+    },
+
     {
         id: 1,
         title: 'Mahmut Orhan',

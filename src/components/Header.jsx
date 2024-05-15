@@ -6,15 +6,30 @@ import event2 from '../assets/nicomoreno-cuadrado.jpg';
 import event3 from '../assets/pfirter-cuadrado.jpg';
 import styled from 'styled-components';
 import { slidesOnLeft } from 'react-slick/lib/utils/innerSliderUtils';
+import MainLogo from '../assets/icons8-ticket-96-1.png'
 
-const ContentContainer = styled.div`
+const HeadContentContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: #fff;
+  /* border: 1px solid red; */
+`;
+
+const SearchContentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 80%;
   margin: 0 auto;
   padding-top: 20px;
   color: #fff;
+  /* border: 1px solid red; */
 `;
 
 const SearchInput = styled.input`
@@ -28,12 +43,21 @@ const SearchInput = styled.input`
 `;
 
 const StyledTitle = styled.h1`
-  /* color: #222; */
+
 `;
 
 const BeatTicket = styled.h4`
-  /* color: #222; */
-  margin-bottom:20px;
+
+`;
+
+const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const LogoMain = styled.img`
+
 `;
 
 
@@ -61,9 +85,15 @@ function Header({filterText, onFilterTextChange}) {
 
   return (
     <>
-      <ContentContainer>
-        <BeatTicket>BEAT TICKET</BeatTicket>
-      </ContentContainer>
+
+      <HeadContentContainer>
+        <LogoContainer>
+          <LogoMain src={MainLogo} alt='logo' />
+        </LogoContainer>
+        <LogoContainer>
+          <BeatTicket>BEAT TICKET</BeatTicket>
+        </LogoContainer>
+      </HeadContentContainer>
       <div>
         <Slider {...settings}>
           <div>
@@ -77,17 +107,17 @@ function Header({filterText, onFilterTextChange}) {
           </div>
         </Slider>
       </div>
-      <ContentContainer>
+      <SearchContentContainer>
         <StyledTitle>Eventos y más en Mendoza</StyledTitle>
-      </ContentContainer>
-      <ContentContainer >
+      </SearchContentContainer>
+      <SearchContentContainer >
         <SearchInput 
           type="text" 
           placeholder='Buscar una fiesta...'
           value={filterText} 
           onChange={(e) => onFilterTextChange(e.target.value)}
           />
-      </ContentContainer>
+      </SearchContentContainer>
     </>
   )
 }
