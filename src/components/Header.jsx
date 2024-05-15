@@ -1,11 +1,12 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import event1 from '../assets/aura-2104-260395-min-cuadrado.jpg'; // Ejemplo de importación de imágenes
+import event1 from '../assets/nicomoreno-cuadrado.jpg'; // Ejemplo de importación de imágenes
 import event2 from '../assets/nicomoreno-cuadrado.jpg';
-import event3 from '../assets/pfirter-cuadrado.jpg';
+import event3 from '../assets/nicomoreno-cuadrado.jpg';
+import event4 from '../assets/magdalena-cuadrado.png';
+import event5 from '../assets/victoria-engel.png';
 import styled from 'styled-components';
-import { slidesOnLeft } from 'react-slick/lib/utils/innerSliderUtils';
 import MainLogo from '../assets/icons8-ticket-96-1.png'
 
 const HeadContentContainer = styled.div`
@@ -96,14 +97,20 @@ function Header({filterText, onFilterTextChange}) {
       </HeadContentContainer>
       <div>
         <Slider {...settings}>
-          <div>
+          {/* <div>
             <img src={event1} alt="Event 1" width='100%'/>
           </div>
           <div>
             <img src={event2} alt="Event 2" width='100%'/>
-          </div>
+          </div> */}
           <div>
             <img src={event3} alt="Event 3" width='100%'/>
+          </div>
+          <div>
+            <img src={event4} alt="Event 4" width='100%'/>
+          </div>
+          <div>
+            <img src={event5} alt="Event 5" width='100%'/>
           </div>
         </Slider>
       </div>

@@ -1,16 +1,55 @@
+import moment from 'moment'
 import mahmut from './mahmut_cuadrado.jpeg'
 import milena from './milena-adamis-flyer.jpeg'
 import thedrop from './thedropflyer.jpeg'
 import aura from './aura-2104-260395-min.jpg'
 import nicomoreno from './nicomoreno.jpg'
 import pfirter from './pfirter.jpg'
+import magdalena from './magdalena-cuadrado.png'
+import victoria_engel from './victoria-engel.png'
+
+const hoy = moment()
+const formato = 'DD / MM / YYYY'
 
 export const events = [
+    {
+        id: 8,
+        title: 'MAGDALENA',
+        day: 'Viernes',
+        date: moment('05-31-2024').format(formato),
+        timeStart: '23:00',
+        timeFinish: '06:00',
+        producedBy: ['KOI CLUB'],
+        location: 'Antigua Bodega Giol',
+        link: 'https://www.passline.com/eventos/magdalena-solomun-club-koi/tomas-ferro-277916 ',
+        lineUp: ['MAGDALENA SOLOMUN', 'More TBA'],
+        squareImage: magdalena,
+        images: [],
+        finished: hoy.format(formato) > moment('05-31-2024').format(formato),
+
+    },
+    {
+        id: 7,
+        title: 'VICTORIA ENGEL',
+        day: 'Viernes',
+        date: moment('06-20-2024').format(formato),
+        timeStart: '23:00',
+        timeFinish: '06:00',
+        producedBy: ['MANGLAR'],
+        location: 'WABI',
+        link: '',
+        lineUp: ['VICTORIA ENGEL', 'More TBA'],
+        squareImage: victoria_engel,
+        images: [],
+        finished: hoy.format(formato) > moment('06-20-2024').format(formato),
+
+    },
+
     {
         id: 6,
         title: 'PFIRTER',
         day: 'Sábado',
-        date: '11/05/2024',
+        date: moment('05-11-2024').format(formato),
         timeStart: '23:00',
         timeFinish: '06:00',
         producedBy: ['TEIKO WAREHOUSE'],
@@ -19,7 +58,7 @@ export const events = [
         lineUp: ['Pfirter', 'Gresil', 'O-YOKAI'],
         squareImage: pfirter,
         images: [],
-        finished: false,
+        finished: hoy.format(formato) > moment('11-05-2024').format(formato),
 
     },
     {
