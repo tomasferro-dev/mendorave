@@ -37,7 +37,7 @@ export const events = [
         timeFinish: '06:00',
         producedBy: ['MANGLAR'],
         location: 'WABI',
-        link: '',
+        link: 'https://centralticket.net/event/2669?prefer=130365',
         lineUp: ['VICTORIA ENGEL', 'More TBA'],
         squareImage: victoria_engel,
         images: [],
