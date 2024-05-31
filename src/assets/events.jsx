@@ -1,3 +1,4 @@
+import { fechas } from './eventsFechas'
 import moment from 'moment'
 import mahmut from './mahmut_cuadrado.jpeg'
 import milena from './milena-adamis-flyer.jpeg'
@@ -5,11 +6,13 @@ import thedrop from './thedropflyer.jpeg'
 import aura from './aura-2104-260395-min.jpg'
 import nicomoreno from './nicomoreno.jpg'
 import pfirter from './pfirter.jpg'
-import magdalena from './magdalena-cuadrado.png'
+import magdalena from './magdalena-final.png'
 import victoria_engel from './victoria-engel.png'
 
 const hoy = moment()
 const formato = 'DD / MM / YYYY'
+const formatoDia = 'DD'
+const formatoMes = 'MM'
 
 export const events = [
     {
@@ -41,7 +44,7 @@ export const events = [
         lineUp: ['VICTORIA ENGEL', 'More TBA'],
         squareImage: victoria_engel,
         images: [],
-        finished: hoy.format(formato) > moment('06-20-2024').format(formato),
+        finished: hoy.format(formatoDia) > moment('06-20-2024').format(formatoDia) && hoy.format(formatoMes) > moment('06-20-2024').format(formatoMes),
 
     },
 
