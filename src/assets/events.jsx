@@ -28,8 +28,8 @@ export const events = [
         lineUp: ['MAGDALENA SOLOMUN', 'More TBA'],
         squareImage: magdalena,
         images: [],
-        finished: hoy.format(formato) > moment('05-31-2024').format(formato),
-
+        // finished: hoy.format(formatoDia) > moment('05-31-2024').format(formatoDia) || hoy.format(formatoMes) > moment('05-31-2024').format(formatoMes),
+        finished: hoy.format(formatoMes) > moment('05-31-2024').format(formatoMes) ? true : hoy.format(formatoDia) > moment('05-31-2024').format(formatoDia),
     },
     {
         id: 7,
@@ -44,7 +44,8 @@ export const events = [
         lineUp: ['VICTORIA ENGEL', 'More TBA'],
         squareImage: victoria_engel,
         images: [],
-        finished: hoy.format(formatoDia) > moment('06-20-2024').format(formatoDia) && hoy.format(formatoMes) > moment('06-20-2024').format(formatoMes),
+        // finished: hoy.format(formatoDia) > moment('06-20-2024').format(formatoDia) && hoy.format(formatoMes) > moment('06-20-2024').format(formatoMes),
+        finished: hoy.format(formatoMes) > moment('06-20-2024').format(formatoMes) ? true : hoy.format(formatoDia) > moment('06-20-2024').format(formatoDia),
 
     },
 
@@ -61,7 +62,9 @@ export const events = [
         lineUp: ['Pfirter', 'Gresil', 'O-YOKAI'],
         squareImage: pfirter,
         images: [],
-        finished: hoy.format(formato) > moment('11-05-2024').format(formato),
+        // finished: hoy.format(formato) > moment('11-05-2024').format(formato),
+        finished: hoy.format(formatoMes) > moment('11-05-2024').format(formatoMes) ? true : hoy.format(formatoDia) > moment('11-05-2024').format(formatoDia),
+
 
     },
     {
